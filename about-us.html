@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Про нас — Наша пасіка</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <img src="https://learn.logikaschool.com/uploads/student/1382797/67965766ee0aa.svg" alt="Логотип пасіки">
+    <div class="header-text">
+        <h1 style="color: white; text-shadow: 2px 2px 10px rgba(0,0,0,0.5); font-size: 3rem; margin-top: 20px;">
+            Про нас
+        </h1>
+    </div>
+</header>
+
+<div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+        <div class="d-flex justify-content-around align-items-center flex-wrap">
+            <a href="index.html" class="nav-custom-link">Головна</a>
+            <a href="tea-herbs.html" class="nav-custom-link">Трави чаю</a>
+            <a href="about-us.html" class="nav-custom-link active">Про нас</a>
+            <a href="shop.html" class="nav-custom-link">Магазин</a>
+        </div>
+    </div>
+</div>
+
+<nav class="navbar navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+<main class="about-section">
+    <section class="container">
+        <div class="row align-items-center mb-5">
+            <div class="col-md-6">
+                <h2>Хто ми такі?</h2>
+                <p>Наша пасіка — це сімейна справа. Ми збираємо мед у найчистіших куточках нашого краю, де бджоли мають доступ до найкращих медоносів: від золотавої ліпи до цілющої фацелії.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="https://images.unsplash.com/photo-1587334274328-64186a80aeee?auto=format&fit=crop&q=80&w=800" alt="Бджоляр за роботою" class="img-fluid rounded shadow">
+            </div>
+        </div>
+          
+        </div>
+    </section>
+</main>
+
+<footer>
+    <a href="https://facebook.com" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" width="20px" alt="Facebook">
+    </a>
+    <a href="https://instagram.com" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" width="20px" alt="Instagram">
+    </a>
+    <p><b>Напиши - отримай <br/> промокод!</b></p> 
+</footer>
+
+<button type="button" class="cart-btn" data-toggle="modal" data-target="#cartModal">
+    🛒 (<span id="cart-count">0</span>)
+</button>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+<script src="shop.js"></script>
+</body>
+</html>

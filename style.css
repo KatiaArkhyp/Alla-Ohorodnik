@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Playwrite+IN&family=Pochaevsk&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Основний стиль сторінки */
+body {
+    font-family:  "Pochaevsk", serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-image: url("images/c2b8135e-4258-4942-84a9-18768f798521.jpg");
+}
+
+/* Оновлений хедер */
+header {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                url('https://img.pikbest.com/backgrounds/20191021/delicious-honey-e-commerce-orange-banner-background_1905335.jpg!bw700') no-repeat center;
+    background-size: cover;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: none;
+    position: relative;
+}
+
+/* Оновлений логотип */
+header img {
+    max-width: 180px;
+    background-color: rgba(255, 255, 255, 0.1); /* Легке підсвічування замість сірого */
+    backdrop-filter: blur(5px); /* Ефект розмиття за логотипом */
+    padding: 15px;
+    border-radius: 50%;
+    border: 2px solid rgba(247, 196, 0, 0.5); /* Тонка золота рамка */
+    transition: transform 0.5s ease;
+}
+
+header img:hover {
+    transform: rotate(5deg) scale(1.05); /* Анімація при наведенні */
+}
+
+/* Стильна прозора навігація */
+.navbar {
+    background: rgba(0, 0, 0, 0.8) !important;
+    backdrop-filter: blur(10px); /* Розмиття контенту під меню */
+    border-bottom: 2px solid #f7c400;
+    padding: 10px 20px;
+}
+
+/* Покращення тексту в розгорнутому меню */
+.bg-dark.p-4 {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+.nav-link {
+    color: #f7c400; 
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 28px;
+    font-weight: bold;
+   
+}
+
+
+
+/* Основний вміст */
+main {
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.8); 
+    border-radius: 10px;
+    margin: 50px auto;
+    max-width: 1200px;
+    
+}
+
+/* Заголовок */
+main h1 {
+    text-align: center;
+    color: #f0a500; 
+    margin-bottom: 40px;
+    font-size: 36px;
+    
+}
+
+/* Секція товарів */
+.info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 стовпці */
+    gap: 40px; /* Відстань між картками */
+    justify-content: center; /* Вирівнювання по центру */
+}
+
+article {
+    background: rgba(255, 223, 0, 0.9); 
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+
+article img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 4px solid #f0a500; 
+}
+
+article h2 {
+    text-align: center;
+    font-size: 22px;
+    color: #333;
+    margin: 20px 0;
+}
+
+article p {
+    padding: 0 20px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    font-family: serif ;
+}
+
+details summary {
+    font-weight: bold;
+    font-family:  serif;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+details {
+    font-family:  serif;
+    margin: 10px;
+    padding-bottom: 20px;
+}
+
+
+main img {
+    margin-top: 40px;
+    width: 100%;
+    border-radius: 10px;
+    
+}
+
+
+footer {
+    text-align: center;
+    background: #333;
+    padding: 30px 0;
+    margin-top: 40px;
+    color: #f7c400;
+}
+
+footer a img {
+    width: 60px;
+    margin: 0 10px;
+    
+}
+
+
+footer p {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #fff;
+}
+.shop-nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background: #333;
+    padding: 20px;
+}
+
+.shop-nav a {
+    color: #f7c400;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.shop-nav a.active {
+    text-decoration: underline;
+}
+
+.shop-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.shop-card {
+    background: rgba(255, 223, 0, 0.9);
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.shop-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.shop-card h2 {
+    margin: 15px 0 5px;
+    text-align: center;
+}
+
+.price {
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+}
+
+.desc {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.add-to-cart {
+    margin-top: auto;
+    padding: 10px;
+    border: none;
+    background: #333;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background: #000;
+}
+
+.cart-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px 25px;
+    background-color: #f0a500;
+    color: #333;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.nav-custom-link {
+    color: #f7c400 !important;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none !important;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+
+.nav-custom-link:hover {
+    color: #fff !important;
+    transform: scale(1.1);
+}
+
+@media (max-width: 576px) {
+    .nav-custom-link {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.about-section {
+    line-height: 1.8;
+}
+
+.about-section h2 {
+    color: #f0a500;
+    margin-bottom: 20px;
+}
+
+.advantage-card {
+    background: rgba(255, 223, 0, 0.2);
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+    border: 1px solid rgba(240, 165, 0, 0.3);
+}
+
+.advantage-card:hover {
+    background: rgba(255, 223, 0, 0.4);
+    transform: translateY(-5px);
+}
+
+.advantage-card img {
+    margin-bottom: 15px;
+}
+
+.advantage-card h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+.nav-custom-link.active {
+    border-bottom: 3px solid #f7c400;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наша пасіка</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="https://learn.logikaschool.com/uploads/student/1382797/67965766ee0aa.svg" alt="Логотип пасіки">
+        <!-- <div class="header-text">
+            <h1 style="color: white; text-shadow: 2px 2px 10px rgba(0,0,0,0.5); font-size: 3rem; margin-top: 20px;">
+                Натуральний мед виготовлений з любовью
+            </h1>
+        </div> -->
+    </header>       
+<div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+        <div class="d-flex justify-content-around align-items-center flex-wrap">
+            <a href="index.html" class="nav-custom-link active">Головна</a>
+            <a href="tea-herbs.html" class="nav-custom-link">Трави чаю</a>
+            <a href="about-us.html" class="nav-custom-link">Про нас</a>
+            <a href="shop.html" class="nav-custom-link">Магазин</a>
+        </div>
+    </div>
+</div>
+  <nav class="navbar navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+</div>
+    <main>
+        <h1>Ми радимо:</h1>
+        <section class="info">
+            <!-- Перша картка -->
+            <article>
+                <h2>Фацелієвий мед</h2>
+                <img src="https://sviymed.com/content/uploads/images/phacelia4.jpg" width="400px" height="300px" alt="Фацелієвий мед">
+                <p>Мед, який збирається з квітів фацелії. Він має особливий аромат та світлий колір.</p>
+                <details>
+                    <summary>Детальніше</summary>
+                    Фацелієвий мед отримують із нектару фацелії, яка є цінною медоносною рослиною. Цей мед відомий своїм ніжним смаком і користю для травлення.
+                </details>
+            </article>
+            <!-- Друга картка -->
+            <article>
+                <h2>Гречаний мед</h2>
+                <img src="https://hz-voda.com.ua/wp-content/uploads/2023/11/grechishniy-med-4-1024x847.jpg?x73889" width="400px" height="300px" alt="Гречаний мед">
+                <p>Темний, насичений мед із квітів гречки.</p>
+                <details>
+                    <summary>Детальніше</summary>
+                    Гречаний мед має темний колір, яскравий смак та високий вміст заліза. Він корисний для кровоносної системи та відновлення організму.
+                </details>
+            </article>
+            <!-- Третя картка -->
+            <article>
+                <h2>Липовий мед</h2>
+                <img src="https://smartfood.kh.ua/wp-content/uploads/2019/07/%D0%9B%D0%B8%D0%BF%D0%BE%D0%B2%D1%8B%D0%B9.jpg" width="400px" height="300px" alt="Липовий мед">
+                <p>Запашний мед із квітів липи.</p>
+                <details>
+                    <summary>Детальніше</summary>
+                    Липовий мед славиться своїм цілющим ефектом. Він допомагає при застуді, має антисептичні та заспокійливі властивості.
+                </details>
+            </article>
+            <!-- Четверта картка -->
+            <article>
+                <h2>Соньшниковий мед</h2>
+                <img src="https://thumbs.dreamstime.com/z/%D1%84%D0%BE%D0%BD-%D0%BC%D0%B5%D0%B4%D0%B0-%D1%81%D0%B2%D0%B5%D0%B6%D0%B8%D0%B9-%D0%BC%D0%B5%D0%B4-%D0%B2-%D0%B3%D0%BE%D1%80%D1%88%D0%BE%D1%87%D0%BA%D0%B5-%D1%81-%D0%BC%D0%B5%D0%B4%D0%BE%D0%B2%D1%8B%D0%BC%D0%B8-%D0%BA%D0%BE%D0%BC%D0%B1%D0%B8%D0%BD%D0%B0%D1%82%D0%B0%D0%BC%D0%B8-158271141.jpg" width="400px" height="300px" alt="Соняшниковий мед">
+                <p>Яскравий мед із золотавим відтінком.</p>
+                <details>
+                    <summary>Детальніше</summary>
+                    Соняшниковий мед має легкий аромат і приємний смак. Він швидко кристалізується і багатий на вітаміни.
+                </details>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <a href="https://facebook.com" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" width="20px" alt="Facebook">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" width="20px" alt="Instagram">
+        </a>
+        <p><b>Напиши - отримай <br/> промокод!</b></p> 
+    </footer>
+    <button type="button" class="cart-btn" data-toggle="modal" data-target="#cartModal">
+    🛒 Кошик (<span id="cart-count">0</span>)
+</button>
+
+<div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Ваш кошик</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="cart-items-list">
+                    <p class="text-center">Кошик порожній</p>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between font-weight-bold">
+                    <span>Разом до оплати:</span>
+                    <span><span id="total-price">0</span> грн</span>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Продовжити покупки</button>
+                <button type="button" class="btn btn-warning">Оформити</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>

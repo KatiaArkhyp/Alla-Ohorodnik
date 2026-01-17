@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Магазин меду</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <img src="https://learn.logikaschool.com/uploads/student/1382797/67965766ee0aa.svg" alt="Логотип пасіки">
+</header>
+
+<div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+        <div class="d-flex justify-content-around align-items-center flex-wrap">
+            <a href="index.html" class="nav-custom-link">Головна</a>
+            <a href="tea-herbs.html" class="nav-custom-link">Трави чаю</a>
+            <a href="about-us.html" class="nav-custom-link">Про нас</a>
+            <a href="shop.html" class="nav-custom-link active">Магазин</a>
+        </div>
+    </div>
+</div>
+
+<nav class="navbar navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+<main>
+    <h1>Наш асортимент меду</h1>
+    <section class="shop-grid">
+        <article class="shop-card">
+            <img src="https://sviymed.com/content/uploads/images/phacelia4.jpg" class="product-image" alt="Фацелієвий мед">
+            <h2>Фацелієвий мед</h2>
+            
+            <div class="selection-group" style="padding: 10px 20px;">
+                <label for="weight-select">Оберіть вагу:</label>
+                <select class="weight-select form-control">
+                    <option value="0.5" data-price="250" data-img="https://sviymed.com/content/uploads/images/phacelia4.jpg">0.5 кг — 250 грн</option>
+                    <option value="1.0" data-price="480" data-img="https://beekingdom.in.ua/uploads_images/facelia_honey-2238.jpg">1.0 кг — 480 грн</option>
+                </select>
+            </div>
+
+            <p class="price"><span>250</span> грн</p>
+            <p class="desc">Ніжний, світлий мед з легким ароматом.</p>
+            <button class="add-to-cart">У кошик</button>
+        </article>
+        <article class="shop-card">
+            <img src="https://hz-voda.com.ua/wp-content/uploads/2023/11/grechishniy-med-4-1024x847.jpg" class="product-image" alt="Гречаний мед">
+            <h2>Гречаний мед</h2>
+            <div class="selection-group" style="padding: 10px 20px;">
+                <label for="weight-select">Оберіть вагу:</label>
+                <select class="weight-select form-control">
+                    <option value="0.5" data-price="300" data-img="https://images.prom.ua/4867091769_w640_h640_grechnevyj-med-05.jpg">0.5 кг — 300 грн</option>
+                    <option value="1.0" data-price="510" data-img="https://images.prom.ua/4745404201_w640_h640_4745404201.jpg">1.0 кг — 510 грн</option>
+                </select>
+            </div>
+            <p class="price"><span>300</span> грн</p>
+            <p class="desc">Темний мед з насиченим смаком.</p>
+            <button class="add-to-cart">У кошик</button>
+        </article>
+        <article class="shop-card">
+            <img src="https://smartfood.kh.ua/wp-content/uploads/2019/07/%D0%9B%D0%B8%D0%BF%D0%BE%D0%B2%D1%8B%D0%B9.jpg" class="product-image" alt="Липовий мед">
+            <h2>Липовий мед</h2>
+            <div class="selection-group" style="padding: 10px 20px;">
+                <label for="weight-select">Оберіть вагу:</label>
+                <select class="weight-select form-control">
+                    <option value="0.5" data-price="200" data-img="https://images.prom.ua/6763622560_w1280_h640_6763622560.jpg">0.5 кг — 200 грн</option>
+                    <option value="1.0" data-price="400" data-img="https://content2.rozetka.com.ua/goods/images/big_tile/608333837.jpg">1.0 кг — 400 грн</option>
+                </select>
+            </div>
+
+            <p class="price"><span>200</span> грн</p>
+            <p class="desc">Ароматний та корисний при застуді.</p>
+            <button class="add-to-cart">У кошик</button>
+        </article>
+        <article class="shop-card">
+            <img src="https://thumbs.dreamstime.com/z/%D1%84%D0%BE%D0%BD-%D0%BC%D0%B5%D0%B4%D0%B0-%D1%81%D0%B2%D0%B5%D0%B6%D0%B8%D0%B9-%D0%BC%D0%B5%D0%B4-%D0%B2-%D0%B3%D0%BE%D1%80%D1%88%D0%BE%D1%87%D0%BA%D0%B5-%D1%81-%D0%BC%D0%B5%D0%B4%D0%BE%D0%B2%D1%8B%D0%BC%D0%B8-%D0%BA%D0%BE%D0%BC%D0%B1%D0%B8%D0%BD%D0%B0%D1%82%D0%B0%D0%BC%D0%B8-158271141.jpg" class="product-image" alt="Соняшниковий мед">
+            <h2>Соньшниковий мед</h2>
+            <div class="selection-group" style="padding: 10px 20px;">
+                <label for="weight-select">Оберіть вагу:</label>
+                <select class="weight-select form-control">
+                    <option value="0.5" data-price="80" data-img="https://images.prom.ua/6279114449_w200_h200_myod-podsolnechnyj-naturalnyj.jpg">0.5 кг — 80 грн</option>
+                    <option value="1.0" data-price="110" data-img="https://images.prom.ua/6830967047_w640_h320_myod-podsolnuha-naturalnyj.jpg">1.0 кг — 110 грн</option>
+                </select>
+            </div>
+
+            <p class="price"><span>80</span> грн</p>
+            <p class="desc">Легкий, швидко кристалізується.</p>
+            <button class="add-to-cart">У кошик</button>
+        </article>
+
+    </section>
+</main>
+
+    <footer>
+        <a href="https://facebook.com" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" width="20px" alt="Facebook">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" width="20px" alt="Instagram">
+        </a>
+        <p><b>Напиши - отримай <br/> промокод!</b></p> 
+    </footer>
+
+<button type="button" class="cart-btn" data-toggle="modal" data-target="#cartModal">
+    🛒 Кошик (<span id="cart-count">0</span>)
+</button>
+
+<div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Ваш кошик</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="cart-items-list">
+                    <p class="text-center">Кошик порожній</p>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between font-weight-bold">
+                    <span>Разом до оплати:</span>
+                    <span><span id="total-price">0</span> грн</span>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Продовжити покупки</button>
+                <button type="button" class="btn btn-warning">Оформити</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+<script src="shop.js"></script>
+</body>
+</html>
